@@ -1,0 +1,50 @@
+.topnav {
+    overflow: hidden;
+    background-color: #010801;
+    }
+    /* Menerapkan style pada link navigation bar atas */
+    .topnav a {
+    float: left;
+    display: block;
+    color: hsl(0, 94%, 50%);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    /* Mengubah warna navigasi saat disentuh */
+    .topnav a:hover {
+    background-color: #6af60de6;
+    color: hwb(345 9% 87%);
+    }
+body {
+    margin: 0;
+    }
+    /* Menerapkan style header */
+    .header {
+    background-color: hsla(106, 92%, 47%, 0.936);
+    padding: 20px;
+    text-align: center;
+    }
+* {
+    box-sizing: border-box;
+    }
+    /* Mengatur 3 kolom yang sama posisinya bersebelahan satu sama lain 
+    */
+    .column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    }
+    /* Menghapus float setelah kolom */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    /* Tata letak responsif - membuat ketiga kolom saling bertumpuk, bukan 
+    bersebelahan */
+    @media screen and (max-width:600px) {
+    .kolom {
+    width: 100%;
+    }
+    }
